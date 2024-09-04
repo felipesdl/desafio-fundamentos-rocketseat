@@ -1,0 +1,46 @@
+.clientContainer {
+  .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 110%;
+      height: 110%;
+      background: var(--gradient);
+      border-radius: 14px;
+    }
+    .img {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .textContainer {
+    display: grid;
+    gap: 4px;
+    span {
+      color: var(--color-gray-600);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 140%;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 140%;
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+  }
+}

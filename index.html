@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="./src/assets/Logo.png" />
+
+  <title>Member Club</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logoContainer">
+      <img src="./src/assets/Logo.png" alt="logo member club" class="logo">
+    </div>
+    <form>
+      <div class="inputContainer">
+        <input id="inputId" type="text" class="input">
+        <button type="submit" class="iconContainer">
+          <img src="./src/assets/Icons.svg" alt="seta de enter" class="icon">
+        </button>
+      </div>
+    </form>
+    <div class="infoContainer">
+      <div class="clientContainer">
+        <div class="imgContainer">
+          <img src="./src/assets/Picture.png" alt="imagem do cliente" class="img">
+        </div>
+        <div class="textContainer">
+          <span id="name">Nome Cliente</span>
+          <p>Cliente desde <span id="since">00/00/0000</span></p>
+        </div>
+      </div>
+      <div class="cardContainer">
+        <div class="head">
+          <p class="title">Cartão Fidelidade</p>
+          <p class="description">Ao fazer cortes de cabelo, o décimo sai de graça!</p>
+          <span class="idCard">ID: <span id="idCard">000-000-000-000</span></span>
+        </div>
+        <div class="stickers">
+          <div class="sticker">
+          </div>
+          <div class="sticker">
+          </div>
+          <div class="sticker">
+          </div>
+          <div class="sticker">
+          </div>
+          <div class="sticker">
+          </div>
+          <div class="sticker">
+          </div>
+          <div class="sticker">
+          </div>
+          <div class="sticker">
+          </div>
+          <div class="sticker">
+          </div>
+          <div class="sticker gift">
+            <img src="./src/assets/gift.svg" alt="sticker" class="smaller">
+          </div>
+        </div>
+      </div>
+      <div class="historyContainer">
+        <div class="head">
+          <span>HISTÓRICO</span>
+          <span>
+            <span class="cortes">0</span>
+            cortes
+          </span>
+        </div>
+        <ul>
+        </ul>
+      </div>
+      <div class="progressContainer">
+        <p class="head">
+          <span id="left">0</span>
+          cortes restantes
+        </p>
+        <div class="progress">
+          <progress id="progress" value="0" max="100"> </progress> <span><span class="cortes">0</span> de 10</span>
+        </div>
+        <img src="./src/assets/gift-complete.png" alt="presente">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

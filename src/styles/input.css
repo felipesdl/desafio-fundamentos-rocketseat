@@ -1,0 +1,42 @@
+.inputContainer {
+  display: flex;
+  width: 400px;
+  padding: 8px 8px 8px 16px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  border: 1.5px solid var(--color-gray-400);
+  background: var(--color-gray-300);
+  margin-bottom: 10%;
+  transition: border-color 350ms ease-in-out;
+  &:has(input:focus) {
+    border-radius: 12px;
+    border: 1.5px solid var(--color-pink);
+    background: var(--color-gray-300);
+  }
+  .input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  .iconContainer {
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    opacity: 0.6;
+    background: var(--color-gray-700);
+    transition: opacity 350ms ease-in-out;
+    .icon {
+      background-color: transparent;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

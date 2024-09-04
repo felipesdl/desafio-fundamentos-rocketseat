@@ -1,0 +1,59 @@
+.cardContainer {
+  .head {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    .title {
+      color: var(--color-gray-500);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 140%; /* 16.8px */
+      text-transform: uppercase;
+    }
+    .description {
+      color: var(--color-gray-500);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 140%;
+    }
+    .idCard {
+      position: absolute;
+      right: 0;
+      border-radius: 999px;
+      background-color: var(--color-gray-300);
+      padding: 8px 24px;
+      color: var(--color-gray-500);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 140%;
+    }
+  }
+  .stickers {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    .sticker,
+    .gift {
+      display: flex;
+      width: 88px;
+      height: 88px;
+      padding: 12px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      background: var(--color-gray-200);
+      backdrop-filter: blur(5px);
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      .smaller {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
